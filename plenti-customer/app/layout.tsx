@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "./Components/Navbar";
 import Sidebar from "./Components/Sidebar";
+import Promotions from "./Components/Promotions";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,7 +25,9 @@ export default function RootLayout({
           <Sidebar />
           <div className="ml-[280px] mt-[80px] flex  w-[95%] border-2 border-[red] h-[100vh]">
             <aside className="basis-[70%]">{children}</aside>
-            <aside className="basis-[30%] border-2 border-[green]"></aside>
+            <aside className="basis-[30%] border-2 border-[green]">
+              <Promotions />
+            </aside>
           </div>
         </main>
       </body>
