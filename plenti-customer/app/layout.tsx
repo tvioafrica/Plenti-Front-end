@@ -25,7 +25,7 @@ export default function RootLayout({
           <Sidebar />
           <div className="ml-[280px] mt-[80px] flex  w-[95%] border-2 border-[red] h-[100vh]">
             <aside className="basis-[70%]">{children}</aside>
-            <aside className="basis-[30%] border-2 border-[green]">
+            <aside className="w-[30%] border-2 border-[green]">
               <Promotions />
             </aside>
           </div>
