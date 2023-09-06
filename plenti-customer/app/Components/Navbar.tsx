@@ -6,7 +6,7 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 ml-[280px]  h-[80px] bg-white p-[1rem] border-b-2 flex items-center w-[95%] ">
+    <div className="fixed top-0 ml-[280px] z-50 h-[80px] bg-white p-[1rem] border-b-2 flex items-center w-[95%] ">
       <aside className="basis-[60%]">
         <Paper
           component="form"
