@@ -6,5 +6,6 @@ import category_icon from "./category_icon.svg";
 import profile from "./profile.svg";
 import promotion1 from './promotion_card1.svg'
 import promotion2 from './promotion_card2.svg'
+import promotionlady from './promotion_lady.svg'
 
-export { logo, profile, profile_icon, store_icon, category_icon , home_icon, promotion2 ,promotion1};
+export { logo, profile, profile_icon, store_icon, category_icon , home_icon, promotion2 ,promotion1 ,promotionlady};
