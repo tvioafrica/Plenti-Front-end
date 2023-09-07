@@ -18,7 +18,8 @@ import {
   cart8,
   brand1,
   brand2,
-  brand3
+  brand3,
+  deal
 } from "../../images";
 
 const navLinks = [
@@ -44,6 +45,40 @@ const navLinks = [
   },
 ];
 
+const dealCard = [
+  {
+    id: 1,
+    img: deal,
+    offer: "Buy Off-shoulder Sleeve Sweater Dress",
+    endDate: "2023-10-7",
+    percentCashback: "Earn ₦3,000 cashbac",
+    remainingDays: 0,
+  },
+  {
+    id: 2,
+    img: deal,
+    offer: "Buy Off-shoulder Sleeve Sweater Dress",
+    endDate: "2023-10-7",
+    percentCashback: "Earn ₦3,000 cashbac",
+    remainingDays: 0,
+  },
+  {
+    id: 3,
+    img: deal,
+    offer: "Buy Off-shoulder Sleeve Sweater Dress",
+    endDate: "2023-10-7",
+    percentCashback: "Earn ₦3,000 cashbac",
+    remainingDays: 0,
+  },
+  {
+    id: 4,
+    img: deal,
+    offer: "Buy Off-shoulder Sleeve Sweater Dress",
+    endDate: "2023-10-7",
+    percentCashback: "Earn ₦3,000 cashbac",
+    remainingDays: 0,
+  },
+];
 const offerCard = [
   {
     id: 1,
@@ -190,4 +225,4 @@ const colors = [
 ];
 
 
-export { navLinks, offerCard, pointOptions, cate, category_brands,colors ,brands};
+export { navLinks, offerCard, pointOptions, cate, category_brands,colors ,brands, dealCard};
