@@ -1,6 +1,9 @@
+"use client";
 import React from "react";
 import Brands from "../Components/Brands";
 import { category_brands, colors } from "../constants/index";
+import { offerCard } from "../constants/index";
+import OfferCard from "../Components/Offers";
 
 const page = () => {
   return (
@@ -27,6 +30,17 @@ const page = () => {
         })}
       </section>
       <Brands />
+      <div className="flex justify-between my-[1rem] px-[2rem]">
+          <span className="text-[#A09F9F]">Explore top offers and discounts</span>
+          <span className=" font-bold">See all</span>
+        </div>
+      <div className="grid grid-cols-2 gap-3 my-[2rem]">
+        {offerCard.slice(0, 2).map((offer) => (
+          <div className="w-[320px]" key={offer.id}>
+            <OfferCard offer={offer} />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

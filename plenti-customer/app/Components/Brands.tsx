@@ -12,7 +12,7 @@ const Brands = () => {
         {brands.map((brand, index) => {
           return (
             <div
-              className="h-[140px] w-[220px] flex items-center justify-center flex-col text-[#626060] text-center border-2  rounded-lg rounded-lg gap-4"
+              className="h-[140px] w-[220px] flex items-center justify-center flex-col text-[#626060] text-center   rounded-lg rounded-lg gap-4"
               key={index}
             >
               <img
