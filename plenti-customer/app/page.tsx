@@ -7,7 +7,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import { AiOutlineStar } from 'react-icons/ai';
+import { AiOutlineStar } from "react-icons/ai";
 import Cashback from "./Components/Cashback";
 
 interface TabPanelProps {
@@ -62,7 +62,10 @@ export default function Home() {
         Good Day ,<span className="font-bold text-black"> Romeoscript</span>
       </h2>
       <Box sx={{ bgcolor: "background.paper", width: "100%" }}>
-        <AppBar position="static">
+        <AppBar
+          position="static"
+          style={{ boxShadow: "0px 2px 4px rgba(200, 200, 200, 0.7)" }}
+        >
           <Tabs
             value={value}
             onChange={handleChange}
@@ -71,17 +74,18 @@ export default function Home() {
             variant="fullWidth"
             aria-label="full width tabs example"
             style={{ background: "white", color: "black" }}
-            TabIndicatorProps={{ style: {  margin:'0 auto' , background:'grey'} }} // Custom indicator height
+            TabIndicatorProps={{
+              style: { margin: "0 auto", background: "grey" },
+            }} // Custom indicator height
           >
             <Tab label="Cash back" {...a11yProps(0)} />
             <Tab
-            
               label={
                 <div style={{ display: "flex", alignItems: "center" }}>
                   <AiOutlineStar style={{ marginRight: "0.5rem" }} /> Item Two
                 </div>
               }
-            // Add an icon to the second tab
+              // Add an icon to the second tab
               {...a11yProps(1)}
             />
             <Tab label="Plenti credit" {...a11yProps(2)} />

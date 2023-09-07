@@ -10,6 +10,17 @@ import promotionlady from "./promotion_lady.svg";
 import phone from "./phone.svg";
 import restaurant from "./restaurant.svg";
 import grocery from "./grocery.svg";
+import cart1 from './cart1.svg'
+import cart2 from './cart2.svg'
+import cart3 from './cart3.svg'
+import cart4 from './cart4.svg'
+import cart5 from './cart5.svg'
+import cart6 from './cart6.svg'
+import cart7 from './cart7.svg'
+import cart8 from './cart8.svg'
+import brand1 from './brand1.svg'
+import brand2 from './brand2.svg'
+import brand3 from './brand3.svg'
 
 export {
   logo,
@@ -24,4 +35,15 @@ export {
   restaurant,
   grocery,
   phone,
+  cart1,
+  cart2,
+  cart3,
+  cart4,
+  cart5,
+  cart6,
+  cart7,
+  cart8,
+  brand1,
+  brand2,
+  brand3,
 };

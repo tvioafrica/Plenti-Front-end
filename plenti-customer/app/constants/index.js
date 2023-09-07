@@ -8,6 +8,17 @@ import {
   grocery,
   phone,
   restaurant,
+  cart1,
+  cart2,
+  cart3,
+  cart4,
+  cart5,
+  cart6,
+  cart7,
+  cart8,
+  brand1,
+  brand2,
+  brand3
 } from "../../images";
 
 const navLinks = [
@@ -87,22 +98,96 @@ const pointOptions = [
   },
 ];
 
-const cate =[
+const cate = [
   {
-  
-    img:grocery,
-    text:' Groceries & Food Items'
+    img: grocery,
+    text: " Groceries & Food Items",
   },
   {
-  
-    img:restaurant,
-    text:' Restaurant & Bars'
+    img: restaurant,
+    text: " Restaurant & Bars",
   },
   {
-  
-    img:grocery,
-    text:' Fashion & Apparel'
+    img: grocery,
+    text: " Fashion & Apparel",
+  },
+];
+
+const category_brands = [
+  {
+    id: 1,
+    img: cart1,
+    text:'Beauty & personal care'
+  },
+  {
+    id: 2,
+    img: cart2,
+    text:'Electronics & Gadgets'
+  },
+  {
+    id: 3,
+    img: cart3,
+    text:'Real Estate & Property'
+  },
+  {
+    id: 4,
+    img: cart4,
+    text:'Health & Wellness'
+  },
+  {
+    id: 5,
+    img: cart5,
+    text:'Restaurants & Bars'
+  },
+  {
+    id: 6,
+    img: cart6,
+    text:'Travel & Accommodation'
+  },
+  {
+    id: 7,
+    img: cart7,
+    text:'Fashion & Apparel'
+  },
+  {
+    id: 8,
+    img: cart8,
+    text:'Groceries & Food Items'
+  },
+];
+const brands =[
+  {
+    img:brand1,
+    name:'the palms lekki'
+  },
+  {
+    img:brand2,
+    name:'cocoa-cola'
+  },
+  {
+    img:brand3,
+    name:'Chicken'
+  },
+  {
+    img:brand2,
+    name:'cocoa-cola'
+  },
+  {
+    img:brand2,
+    name:'cocoa-cola'
   },
 ]
 
-export { navLinks, offerCard, pointOptions ,cate };
+const colors = [
+  '#FEE5A5', 
+  '#FED7A5', 
+  '#FEBEA5', 
+  '#FEA5C7', 
+  '#FEA5F3', 
+  '#D6A5FE', 
+  '#A5B8FE', 
+  '#A5FEE3'
+];
+
+
+export { navLinks, offerCard, pointOptions, cate, category_brands,colors ,brands};
