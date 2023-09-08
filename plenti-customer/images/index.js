@@ -22,6 +22,8 @@ import brand1 from './brand1.svg'
 import brand2 from './brand2.svg'
 import brand3 from './brand3.svg'
 import deal from './deal.svg'
+import mall from './mall.svg'
+import mallimage from './mallimage.svg'
 
 export {
   logo,
@@ -48,4 +50,6 @@ export {
   brand2,
   deal,
   brand3,
+  mall,
+  mallimage,
 };

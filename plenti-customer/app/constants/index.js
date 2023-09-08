@@ -19,7 +19,9 @@ import {
   brand1,
   brand2,
   brand3,
-  deal
+  deal,
+  mall,
+  mallimage
 } from "../../images";
 
 const navLinks = [
@@ -109,6 +111,33 @@ const offerCard = [
     remainingDays: 0,
   },
 ];
+
+const malls= [
+  {
+    image:mallimage,
+    mall: mall,
+    mallName:'The palms shopping mall',
+    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+  },
+  {
+    image:mallimage,
+    mall: mall,
+    mallName:'The palms shopping mall',
+    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+  },
+  {
+    image:mallimage,
+    mall: mall,
+    mallName:'The palms shopping mall',
+    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+  },
+  {
+    image:mallimage,
+    mall: mall,
+    mallName:'The palms shopping mall',
+    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+  },
+]
 
 const pointOptions = [
   {
@@ -229,4 +258,4 @@ const colors = [
 ];
 
 
-export { navLinks, offerCard, pointOptions, cate, category_brands,colors ,brands, dealCard};
+export { navLinks, offerCard, pointOptions, cate, category_brands,colors ,brands, dealCard ,malls};
