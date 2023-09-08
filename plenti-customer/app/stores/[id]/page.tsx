@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 import { mall, mallimage } from "@/images/index";
 import Deals from "@/app/Components/Deals";
@@ -21,6 +21,16 @@ const page = () => {
           />
         </aside>
       </div>
+
+      <section className="px-[2rem] ">
+        <p className="text-2xl">The palms shopping mall</p>
+        <p className="my-[2rem] text-[#818080]">
+          Your ultimate shopping destination where style meets convenience.
+          Unveil a world of fashion, entertainment, and delectable dining all
+          under one roof.
+        </p>
+        <h2 className="text-2xl">Available offers and deals</h2>
+      </section>
 
       <div className="flex overflow-x-auto white-space-nowrap gap-8 my-[2rem]">
         {dealCard.map((deal) => {
