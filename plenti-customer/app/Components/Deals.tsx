@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import TimerOutlinedIcon from "@mui/icons-material/TimerOutlined";
 import { ImLocation2 } from "react-icons/im";
+import Link from "next/link";
 
 interface Offer {
   id: number;
@@ -14,9 +15,10 @@ interface Offer {
 
 interface OfferProps {
   offer: Offer;
+  detailsLink: string ;
 }
 
-const Deals: React.FC<OfferProps> = ({ offer }) => {
+const Deals: React.FC<OfferProps> = ({ offer, detailsLink }) => {
   const [remainingDays, setRemainingDays] = useState<number>(0);
 
   useEffect(() => {
@@ -52,9 +54,17 @@ const Deals: React.FC<OfferProps> = ({ offer }) => {
       </span>
       <p className="text-[#818080] my-[1rem]">{offer.offer}</p>
       <p className="text-[#818080] my-[1rem]">
-       <span className="flex items-center"> <ImLocation2 /> {offer.Availabity}</span>
+        <span className="flex items-center">
+          {" "}
+          <ImLocation2 /> {offer.Availabity}
+        </span>
       </p>
-      <p className="underline">view details</p>
+      <Link href={detailsLink}>
+        <p className="underline">
+          {" "}
+          view details
+        </p>
+      </Link>
     </aside>
   );
 };
