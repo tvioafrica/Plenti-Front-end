@@ -40,7 +40,7 @@ const page = () => {
       <div className="grid grid-cols-2 gap-3 my-[2rem]">
         {offerCard.slice(0, 2).map((offer) => (
           <div className="w-[320px]" key={offer.id}>
-            <OfferCard offer={offer} />
+            <OfferCard offer={offer} detailsLink={`/stores/offers`} />
           </div>
         ))}
       </div>

@@ -18,7 +18,7 @@ const CashbackPromotions: React.FC = () => {
 
       <div className="grid grid-cols-3 gap-3">
         {offerData.map((offer) => (
-          <OfferCard offer={offer} key={offer.id} />
+          <OfferCard offer={offer} key={offer.id} detailsLink={`hshsh`} />
         ))}
       </div>
       <MorePoints />

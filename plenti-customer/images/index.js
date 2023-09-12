@@ -24,8 +24,20 @@ import brand3 from './brand3.svg'
 import deal from './deal.svg'
 import mall from './mall.svg'
 import mallimage from './mallimage.svg'
+import stone_logo from './coldstone_logo.png'
+import stone_banner from './detailbanner.svg'
+import gift from './gift.svg'
+import withdraw from './withdraw.svg'
+import apply from './apply.svg'
+import settings from './settings.svg'
+
 
 export {
+  withdraw,
+  apply,
+  settings,
+  gift,
+  stone_banner,
   logo,
   profile,
   profile_icon,
@@ -52,4 +64,5 @@ export {
   brand3,
   mall,
   mallimage,
+  stone_logo
 };

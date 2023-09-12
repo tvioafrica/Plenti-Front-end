@@ -1,6 +1,7 @@
 " use client";
 import React, { useState, useEffect } from "react";
 import TimerOutlinedIcon from "@mui/icons-material/TimerOutlined";
+import Link from "next/link";
 
 interface Offer {
   id: number;
@@ -12,9 +13,10 @@ interface Offer {
 
 interface OfferProps {
   offer: Offer;
+  detailsLink: string;
 }
 
-const OfferCard: React.FC<OfferProps> = ({ offer }) => {
+const OfferCard: React.FC<OfferProps> = ({ offer, detailsLink }) => {
   const [remainingDays, setRemainingDays] = useState<number>(0);
 
   useEffect(() => {
@@ -49,7 +51,9 @@ const OfferCard: React.FC<OfferProps> = ({ offer }) => {
         <TimerOutlinedIcon /> <span>{offer.percentCashback}</span>
       </span>
       <p className="text-[#818080] my-[1rem]">{offer.offer}</p>
-      <p className="underline">view details</p>
+      <Link href={detailsLink}>
+        <p className="underline"> view details</p>
+      </Link>
     </aside>
   );
 };
