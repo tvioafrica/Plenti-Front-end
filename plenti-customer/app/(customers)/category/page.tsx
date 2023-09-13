@@ -1,9 +1,10 @@
 "use client";
 import React from "react";
-import Brands from "../Components/Brands";
-import { category_brands, colors } from "../constants/index";
-import { offerCard } from "../constants/index";
-import OfferCard from "../Components/Offers";
+import Brands from "../../Components/Brands";
+
+import { category_brands, colors } from "../../constants/index";
+import { offerCard } from "../../constants/index";
+import OfferCard from "../../Components/Offers";
 import Link from "next/link";
 
 const page = () => {

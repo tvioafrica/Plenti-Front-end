@@ -30,9 +30,14 @@ import gift from './gift.svg'
 import withdraw from './withdraw.svg'
 import apply from './apply.svg'
 import settings from './settings.svg'
+import loginimg from './loginimg.svg'
+import googleicon from './googleicon.svg'
+import appleicon from './appleicon.svg'
 
 
 export {
+  appleicon,
+  googleicon,
   withdraw,
   apply,
   settings,
@@ -64,5 +69,6 @@ export {
   brand3,
   mall,
   mallimage,
-  stone_logo
+  stone_logo,
+  loginimg
 };

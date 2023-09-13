@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import { malls } from "../constants/index";
+import { malls } from "../../constants/index";
 
 const page = () => {
   return (

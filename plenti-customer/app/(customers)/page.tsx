@@ -1,14 +1,10 @@
 "use client";
 import * as React from "react";
-
-import { useTheme } from "@mui/material/styles";
-import AppBar from "@mui/material/AppBar";
-
 import { AiOutlineStar } from "react-icons/ai";
-import Cashback from "./Components/Cashback";
+import Cashback from "../Components/Cashback";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-import Balance from "./Components/Balance";
+import Balance from "../Components/Balance";
 
 export default function Home() {
   return (
