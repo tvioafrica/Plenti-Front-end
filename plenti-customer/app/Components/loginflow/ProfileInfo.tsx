@@ -60,11 +60,11 @@ const ProfileInfo = () => {
           </div>
           <div className="mt-2">
             <input
-              id="password"
-              name="password"
-              type="password"
+              id="address"
+              name="address"
+              type="text"
               placeholder="your home address"
-              autoComplete="current-password"
+              
               required
               className="block w-full rounded-md bg-[#F3F3F3] border-0 py-1.5 text-gray-400 shadow-sm p-[0.5rem] placeholder:text-gray-400  sm:text-sm sm:leading-6"
             />

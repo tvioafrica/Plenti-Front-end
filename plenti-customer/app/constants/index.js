@@ -21,7 +21,7 @@ import {
   brand3,
   deal,
   mall,
-  mallimage
+  mallimage,
 } from "../../images";
 
 const navLinks = [
@@ -112,32 +112,36 @@ const offerCard = [
   },
 ];
 
-const malls= [
+const malls = [
   {
-    image:mallimage,
+    image: mallimage,
     mall: mall,
-    mallName:'The palms shopping mall',
-    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+    mallName: "The palms shopping mall",
+    descripton:
+      "They offer discounts and slash prices on all products from all deals and discounts....",
   },
   {
-    image:mallimage,
+    image: mallimage,
     mall: mall,
-    mallName:'The palms shopping mall',
-    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+    mallName: "The palms shopping mall",
+    descripton:
+      "They offer discounts and slash prices on all products from all deals and discounts....",
   },
   {
-    image:mallimage,
+    image: mallimage,
     mall: mall,
-    mallName:'The palms shopping mall',
-    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+    mallName: "The palms shopping mall",
+    descripton:
+      "They offer discounts and slash prices on all products from all deals and discounts....",
   },
   {
-    image:mallimage,
+    image: mallimage,
     mall: mall,
-    mallName:'The palms shopping mall',
-    descripton:'They offer discounts and slash prices on all products from all deals and discounts....'
+    mallName: "The palms shopping mall",
+    descripton:
+      "They offer discounts and slash prices on all products from all deals and discounts....",
   },
-]
+];
 
 const pointOptions = [
   {
@@ -185,77 +189,88 @@ const category_brands = [
   {
     id: 1,
     img: cart1,
-    text:'Beauty & personal care'
+    text: "Beauty & personal care",
   },
   {
     id: 2,
     img: cart2,
-    text:'Electronics & Gadgets'
+    text: "Electronics & Gadgets",
   },
   {
     id: 3,
     img: cart3,
-    text:'Real Estate & Property'
+    text: "Real Estate & Property",
   },
   {
     id: 4,
     img: cart4,
-    text:'Health & Wellness'
+    text: "Health & Wellness",
   },
   {
     id: 5,
     img: cart5,
-    text:'Restaurants & Bars'
+    text: "Restaurants & Bars",
   },
   {
     id: 6,
     img: cart6,
-    text:'Travel & Accommodation'
+    text: "Travel & Accommodation",
   },
   {
     id: 7,
     img: cart7,
-    text:'Fashion & Apparel'
+    text: "Fashion & Apparel",
   },
   {
     id: 8,
     img: cart8,
-    text:'Groceries & Food Items'
+    text: "Groceries & Food Items",
   },
 ];
-const brands =[
+const brands = [
   {
-    img:brand1,
-    name:'the palms lekki'
+    img: brand1,
+    name: "the palms lekki",
   },
   {
-    img:brand2,
-    name:'cocoa-cola'
+    img: brand2,
+    name: "cocoa-cola",
   },
   {
-    img:brand3,
-    name:'Chicken'
+    img: brand3,
+    name: "Chicken",
   },
   {
-    img:brand2,
-    name:'cocoa-cola'
+    img: brand2,
+    name: "cocoa-cola",
   },
   {
-    img:brand2,
-    name:'cocoa-cola'
+    img: brand2,
+    name: "cocoa-cola",
   },
-]
+];
 
 const colors = [
-  '#FEE5A5', 
-  '#FED7A5', 
-  '#FEBEA5', 
-  '#FEA5C7', 
-  '#FEA5F3', 
-  '#D6A5FE', 
-  '#A5B8FE', 
-  '#A5FEE3'
+  "#FEE5A5",
+  "#FED7A5",
+  "#FEBEA5",
+  "#FEA5C7",
+  "#FEA5F3",
+  "#D6A5FE",
+  "#A5B8FE",
+  "#A5FEE3",
 ];
+const choose_brand = [brand1, brand2, brand3, brand1, brand2, brand3];
 
-
-export { navLinks, offerCard, pointOptions, cate, category_brands,colors ,brands, dealCard ,malls};
+export {
+  navLinks,
+  offerCard,
+  pointOptions,
+  cate,
+  category_brands,
+  colors,
+  brands,
+  dealCard,
+  malls,
+  choose_brand,
+};
