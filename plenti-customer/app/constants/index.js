@@ -110,6 +110,14 @@ const offerCard = [
     percentCashback: "Earn ₦3,000 cashbac",
     remainingDays: 0,
   },
+  {
+    id: 4,
+    img: promotionlady,
+    offer: "Buy Off-shoulder Sleeve Sweater Dress",
+    endDate: "2023-10-7",
+    percentCashback: "Earn ₦3,000 cashbac",
+    remainingDays: 0,
+  },
 ];
 
 const malls = [

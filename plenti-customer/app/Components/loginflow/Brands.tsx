@@ -1,6 +1,5 @@
 import React from "react";
 import { choose_brand } from "@/app/constants/index";
-
 const Brands = () => {
   return (
     <section className="w-2/5 m-auto text-center h-[80vh] flex items-center justify-center flex-col">

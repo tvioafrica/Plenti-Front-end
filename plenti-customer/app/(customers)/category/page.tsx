@@ -6,6 +6,7 @@ import { category_brands, colors } from "../../constants/index";
 import { offerCard } from "../../constants/index";
 import OfferCard from "../../Components/Offers";
 import Link from "next/link";
+import Searchbar from "@/app/Components/Searchbar";
 
 const page = () => {
   return (
@@ -13,11 +14,12 @@ const page = () => {
       <h2 className="py-[1rem] text-2xl text-[#424040] capitalize font-bold">
         category
       </h2>
+      <Searchbar />
       <p className="text-[#818080] text-[18px] capitalize">
         find and explore categories that suits your needs{" "}
       </p>
 
-      <section className="grid grid-cols-4 gap-4 py-[1rem]">
+      <section className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 py-[1rem]">
         {category_brands.map((category, index) => {
           return (
             <Link href={`/category/${category.text}`} key={category.id}>
@@ -40,8 +42,8 @@ const page = () => {
       </div>
       <div className="grid grid-cols-2 gap-3 my-[2rem]">
         {offerCard.slice(0, 2).map((offer) => (
-          <div className="w-[320px]" key={offer.id}>
-            <OfferCard offer={offer} detailsLink={`/stores/offers`} />
+          <div className="md:w-[320px]" key={offer.id}>
+            <OfferCard offer={offer} detailsLink={`/category/offers`}   />
           </div>
         ))}
       </div>

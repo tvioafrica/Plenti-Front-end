@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 import { promotionlady } from "@/images/index";
 import { offerCard as offerData } from "../constants/index";
 import MorePoints from "./MorePoints";
-import OfferCard from "./Offers";// Replace with the correct path to the OfferCard component
+import OfferCard from "./Offers"; // Replace with the correct path to the OfferCard component
 
 const CashbackPromotions: React.FC = () => {
- 
-
   return (
     <>
       <div className="my-[1.5rem]">
@@ -16,11 +14,15 @@ const CashbackPromotions: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-3 gap-3">
-        {offerData.map((offer) => (
-          <OfferCard offer={offer} key={offer.id} detailsLink={`hshsh`} />
-        ))}
-      </div>
+      
+        <div className="flex overflow-x-auto gap-4">
+          {offerData.map((offer) => (
+             <div className="md:w-1/3 ">
+               <OfferCard offer={offer} key={offer.id} detailsLink={`hshsh`} />
+             </div>
+          ))}
+        </div>
+    
       <MorePoints />
     </>
   );

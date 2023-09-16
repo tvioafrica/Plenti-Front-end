@@ -49,7 +49,7 @@ const Promotions = () => {
 
       <img
         src={promotion2.src}
-        className="w-full h-[352px] my-[1rem] rounded-md"
+        className="w-full h-[352px] my-[1rem] rounded-md max-md:hidden"
       />
     </div>
   );

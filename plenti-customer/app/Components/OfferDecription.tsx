@@ -3,7 +3,7 @@ import React from "react";
 const OfferDecription = () => {
   return (
     <div className="p-[1rem]">
-      <h2 className="text-2xl font-bold w-4/5 text-[#424040]">
+      <h2 className="md:text-2xl text-xl font-bold md:w-4/5 text-[#424040]">
         Buy 2 cups of ice cream for ₦3000 and earn up to ₦300 airtime and other
         free goodies{" "}
       </h2>

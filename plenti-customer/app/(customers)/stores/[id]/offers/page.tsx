@@ -7,10 +7,10 @@ import OfferDecription from "@/app/Components/OfferDecription";
 const page = () => {
   return (
     <div>
-      <aside className="m-[1.5rem]">
+      <aside className="md:m-[1.5rem]">
         <img
           src={stone_banner.src}
-          className="w-full rounded-xl h-[280px] object-cover"
+          className="w-full rounded-xl md:h-[280px] h-[210px] object-cover"
           alt=""
         />
         <div className="flex items-center gap-2 my-[1rem] ">
@@ -20,7 +20,7 @@ const page = () => {
             className="w-[80px] h-[80px] object-cover rounded-full"
           />
           <p>
-            <span className="text-[#626060] block text-xl">
+            <span className="text-[#626060] block  md:text-xl">
               Coldstone creamery ice creams
             </span>
             <span className="text-[#818080]">@coldstonecreamy_ngf</span>
@@ -38,10 +38,10 @@ const page = () => {
         <TabPanel>
           <OfferDecription />
          <div className="flex items-center flex-col gap-4 my-[2rem]">
-         <button className="bg-[#EA1C24] text-[#FFEAEB] rounded-[24px] h-[48px] block w-2/5 px-[3rem] py-[0.5rem]">
+         <button className="bg-[#EA1C24] text-[#FFEAEB] rounded-[24px] h-[48px] block md:w-2/5 w-4/5 px-[3rem] py-[0.5rem]">
             claim this deal
           </button>
-          <button className="text-[#EA1C24] bg-[#FFEAEB] rounded-[24px] h-[48px] block w-2/5 px-[3rem] py-[0.5rem]">
+          <button className="text-[#EA1C24] bg-[#FFEAEB] rounded-[24px] h-[48px] block md:w-2/5 w-4/5 px-[3rem] py-[0.5rem]">
            share to earn points 
           </button>
          </div>

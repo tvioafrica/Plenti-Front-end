@@ -9,11 +9,11 @@ const Sidebar = () => {
   const currentRoute = usePathname();
 
   return (
-    <div className="bg-white fixed top-0 left-0 w-[280px] h-full">
+    <div className="bg-white md:fixed top-0 left-0 md:w-[280px] h-full">
       <div>
-        <img src={logo.src} alt="" className="p-[2rem]" />
+        <img src={logo.src} alt="" className="p-[2rem] md:block hidden" />
       </div>
-      <ul>
+      <ul className="md:block hidden">
         {navLinks.map((nav) => {
           return (
             <Link href={nav.link} key={nav.name}>
@@ -26,6 +26,24 @@ const Sidebar = () => {
               >
                 {" "}
                 <img src={nav.icons.src} alt="" /> <span>{nav.name}</span>
+              </li>
+            </Link>
+          );
+        })}
+      </ul>
+      <ul className="w-full z-30 items-center justify-center fixed bottom-0 left-0 flex bg-white md:hidden">
+        {navLinks.map((nav) => {
+          return (
+            <Link href={nav.link} key={nav.name}>
+              <li
+                className={
+                  currentRoute === nav.link
+                    ? "border-t-4 border-t-red-400  rounded-md flex-col text-black flex  items-center justify-center gap-4 p-6 text-[#818080]"
+                    : "text-black flex flex-col items-center justify-center gap-4 p-6 text-[#818080] z-40"
+                }
+              >
+                {" "}
+                <img src={nav.icons.src} alt="" className="w-[25px] h-[25px]" /> <span>{nav.name}</span>
               </li>
             </Link>
           );

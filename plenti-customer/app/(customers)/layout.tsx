@@ -22,11 +22,11 @@ export default function RootLayout({
     <html lang="en" className="font-family-raleway">
       <body className={inter.className} >
         <Navbar />
-        <main className="flex">
+        <main className="md:flex">
           <Sidebar />
-          <div className="ml-[280px] mt-[80px] flex  w-[95%] overflow-hidden  height-minus-80">
-            <aside className="w-[70%] h-full overflow-auto">{children}</aside>
-            <aside className="w-[30%]">
+          <div className="md:ml-[280px] md:mt-[80px] mb-[100px] flex max-sm:p-[1rem] md:w-[95%] overflow-hidden  height-minus-80">
+            <aside className="md:w-[70%] h-full overflow-auto">{children}</aside>
+            <aside className="w-[30%] hidden md:block">
               <Promotions />
             </aside>
           </div>

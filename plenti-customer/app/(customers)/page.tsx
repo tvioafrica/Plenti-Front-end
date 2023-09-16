@@ -5,12 +5,14 @@ import Cashback from "../Components/Cashback";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
 import Balance from "../Components/Balance";
+import Searchbar from "../Components/Searchbar";
 
 export default function Home() {
   return (
     <>
-      <h2 className="m-[1.5rem] text-[#818080]">
+      <h2 className="md:m-[1.5rem] m-[1rem] text-[#818080]">
         Good Day ,<span className="font-bold text-black"> Romeoscript</span>
+        <Searchbar />
       </h2>
       <Tabs>
         <TabList>

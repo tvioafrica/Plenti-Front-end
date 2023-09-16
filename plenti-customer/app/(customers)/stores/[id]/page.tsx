@@ -7,7 +7,7 @@ import { dealCard } from "@/app/constants/index";
 const page = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="w-[420px] m-[2rem]">
+      <div className="md:w-[420px] md:m-[2rem] my-[2rem]">
         <aside className="relative mb-[4rem]">
           <img
             src={mallimage.src}

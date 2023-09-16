@@ -42,7 +42,7 @@ const Deals: React.FC<OfferProps> = ({ offer, detailsLink }) => {
         <img
           src={offer.img.src}
           alt=""
-          className="w-full h-[153px] object-cover rounded-md"
+          className="w-full h-[153px] object-cover rounded-md "
         />
         <figure className="bg-[#FFF5F5] absolute bottom-0 right-[5%] text-[#EA1C24] my-[1rem] rounded-md p-[0.2rem] px-[0.4rem] text-[10px] w-auto">
           <TimerOutlinedIcon />
