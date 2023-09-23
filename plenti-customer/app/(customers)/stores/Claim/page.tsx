@@ -38,34 +38,37 @@ const page = () => {
 
   return (
     <div>
-      <Breadcrumbs
+     <div className="max-md:hidden">
+     <Breadcrumbs
         separator=">"
         aria-label="breadcrumb"
         sx={{ margin: "1rem 0" }}
       >
         {breadcrumbs}
       </Breadcrumbs>
-      <h2 className="mx-[0.5rem] my-[1rem] text-2xl">Proceed To Checkout </h2>
-      <div className="w-4/5 rounded-lg border-2 flex gap-8 p-[0.5rem] min-h-[151px]">
+     </div>
+     <h2 className="md:hidden font-bold text-xl mx-[2rem]">Caim deal</h2>
+      <h2 className="mx-[0.5rem] my-[1rem] md:text-2xl text-xl">Proceed To Checkout </h2>
+      <div className="md:w-4/5 rounded-lg border-2 flex md:gap-8 gap-3 p-[0.5rem] md:min-h-[151px]">
         <img
           src={deal.src}
           alt=""
-          className="h-[152px] w-[152px] object-cover rounded-md"
+          className="md:h-[152px] md:w-[152px]  w-[90px] h-[90px] object-cover rounded-md"
         />
 
         <aside>
-          <span className="bg-[#FFF5F5] text-[#EA1C24]  inline-block rounded-md p-[0.5rem] text-[12px] w-auto">
+          <span className="max-md:hidden bg-[#FFF5F5] text-[#EA1C24]  inline-block rounded-md p-[0.5rem] text-[12px] w-auto">
             <TimerOutlinedIcon /> <span>Earn ₦3000 cashback</span>
           </span>
 
-          <p className="text-[#818080] my-[1rem]">
+          <p className="text-[#818080] md:my-[1rem]">
             Buy 2 cups of ice cream for ₦3000 and earn up a cashback of ₦1000
           </p>
           <p className="font-bold">₦3000</p>
         </aside>
       </div>
-      <div className="w-4/5 my-[2rem]">
-        <h2 className="text-xl font-bold mb-[1rem]">
+      <div className="md:w-4/5 my-[2rem]">
+        <h2 className="md:text-xl font-bold mb-[1rem]">
           {" "}
           How do you want to claim your order ?
         </h2>
@@ -79,7 +82,7 @@ const page = () => {
 
       <CustomRadio />
 
-      <button className="bg-[#EA1C24] text-[#FFEAEB] rounded-[24px] h-[48px] my-[2rem] block md:w-2/5 w-4/5 px-[3rem] py-[0.5rem]">
+      <button className="bg-[#EA1C24] text-[#FFEAEB] rounded-[24px] h-[48px] my-[2rem] block md:w-2/5 w-full px-[3rem] py-[0.5rem]">
         continue
       </button>
     </div>

@@ -24,7 +24,7 @@ const CustomRadio: React.FC = () => {
   const [selectedValue, setSelectedValue] = useState<OptionType | null>(null);
 
   return (
-    <div className="flex space-x-4 w-[90%]">
+    <div className="md:flex space-x-4 md:w-[90%]">
       {options.map((option) => (
         <label key={option.value} className="relative">
           <input
