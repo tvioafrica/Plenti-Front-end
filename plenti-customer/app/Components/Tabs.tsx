@@ -6,11 +6,14 @@ type TabsProps = {
 };
 
 const Tabs: React.FC<TabsProps> = ({ tabData, children }) => {
-  const [activeTab, setActiveTab] = useState(tabData[0].label);
+  const [activeTab, setActiveTab] = useState(tabData[0]?.label || '');
 
   return (
     <div>
-      <div className="flex justify-around space-x-4 mb-4">
+      <div 
+        className={`flex ${tabData.length > 3 ? 'overflow-x-auto' : 'justify-around'} space-x-4 mb-4`}
+        style={tabData.length > 3 ? { scrollbarWidth: 'none' } : {}}
+      >
         {tabData.map(({ label, icon }) => (
           <Tab
             key={label}
@@ -23,7 +26,7 @@ const Tabs: React.FC<TabsProps> = ({ tabData, children }) => {
       </div>
 
       {React.Children.map(children, (child, index) => {
-        if (activeTab === tabData[index].label) return child;
+        if (activeTab === tabData[index]?.label) return child;
         return null;
       })}
     </div>

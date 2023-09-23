@@ -14,7 +14,8 @@ const Tab: React.FC<TabProps> = ({ label, isActive, onClick, icon }) => {
       className={`px-4 py-2 relative flex items-center space-x-1 transition-colors duration-300 ease-in-out ${isActive ? 'text-black' : 'text-[#424040]'}`}
     >
       {icon && <span className="icon">{icon}</span>}
-      <span>{label}</span>
+      {/* Modified label with responsive text sizing */}
+      <span className="text-xs sm:text-base">{label}</span>
       {isActive && (
         <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-[0.15rem] bg-gray-500 rounded transition-width duration-300 ease-in-out"></span>
       )}

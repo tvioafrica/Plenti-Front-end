@@ -16,7 +16,7 @@ export default function Home() {
         <Searchbar />
       </h2>
 
-      <div className="p-4">
+      <div className="md:p-4 p-2">
         <Tabs
           tabData={[
             { label: "Cash Back" },
@@ -28,7 +28,7 @@ export default function Home() {
             {" "}
             <Cashback />
           </div>
-          <div></div>
+          <div>for you</div>
           <div>
             <Balance />
           </div>

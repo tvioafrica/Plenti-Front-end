@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      
       width: {
         'calc-100-minus-280': 'calc(100% - 280px)',
       },

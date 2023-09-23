@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 import { stone_logo, stone_banner } from "@/images/index";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Tabs from "@/app/Components/Tabs";
 import OfferDecription from "@/app/Components/OfferDecription";
 
 const page = () => {
@@ -28,15 +28,16 @@ const page = () => {
         </div>
       </aside>
 
-      <Tabs>
-        <TabList>
-          <Tab>Offer Description</Tab>
-          <Tab>Store Locations</Tab>
-          <Tab>Terms and Conditions</Tab>
-        </TabList>
-
-        <TabPanel>
-          <OfferDecription />
+      <Tabs
+          tabData={[
+            { label: "Offer Description" },
+            { label: "Store Locations" },
+            { label: "Terms and Conditions " },
+          ]}
+        >
+          <div>
+            {" "}
+            <OfferDecription />
          <div className="flex items-center flex-col gap-4 my-[2rem]">
          <button className="bg-[#EA1C24] text-[#FFEAEB] rounded-[24px] h-[48px] block md:w-2/5 w-4/5 px-[3rem] py-[0.5rem]">
             claim this deal
@@ -45,15 +46,14 @@ const page = () => {
            share to earn points 
           </button>
          </div>
-         
-        </TabPanel>
-        <TabPanel>
-          <h2>Any content 2</h2>
-        </TabPanel>
-        <TabPanel>
-          <h2>Any content 2</h2>
-        </TabPanel>
-      </Tabs>
+          </div>
+          <div>for you</div>
+          <div>
+            info 3
+          </div>
+        </Tabs>
+
+   
     </div>
   );
 };

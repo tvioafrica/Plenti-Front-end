@@ -2,7 +2,7 @@
 import Searchbar from "@/app/Components/Searchbar";
 import Link from "next/link";
 import React from "react";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import Tabs from "@/app/Components/Tabs";
 import "react-tabs/style/react-tabs.css";
 import { malls } from "../../constants/index";
 
@@ -19,16 +19,18 @@ const page = () => {
           offers.
         </p>
       </div>
-      <Tabs>
-        <TabList>
-          <Tab>All Categories</Tab>
-          <Tab>Fashion</Tab>
-          <Tab>Health and Beauty</Tab>
-          <Tab>Restaurant & bars</Tab>
-          <Tab>Electronics</Tab>
-        </TabList>
 
-        <TabPanel>
+      <Tabs
+        tabData={[
+          { label: "All Categories" },
+          { label: "Fashion" },
+          { label: "Health and Beauty" },
+          { label: "Restaurant & bars" },
+          { label: "Electronics" },
+        ]}
+      >
+        <div>
+          {" "}
           <div className="grid md:grid-cols-2 gap-4 my-[2rem]">
             {malls.map((mall) => {
               return (
@@ -58,14 +60,24 @@ const page = () => {
               );
             })}
           </div>
-        </TabPanel>
-        <TabPanel>
+        </div>
+        <div>
           <h2>Any content 2</h2>
-        </TabPanel>
-        <TabPanel>
+        </div>
+        <div>
           <h2>Any content 2</h2>
-        </TabPanel>
+        </div>
+        <div>
+          <h2>Any content 2</h2>
+        </div>
+        <div>
+          <h2>Any content 2</h2>
+        </div>
+        <div>
+          <h2>Any content 2</h2>
+        </div>
       </Tabs>
+
     </>
   );
 };

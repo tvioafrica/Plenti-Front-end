@@ -31,7 +31,7 @@ const transactions = [
 const Balance = () => {
   return (
     <>
-      <div className="p-[2rem]">
+      <div className="md:p-[2rem] py-[2rem]">
         <p className="text-[#818080] text-xl">Current outstanding balance</p>
         <p className="font-bold "> &#8358;20,000.00</p>
       </div>
@@ -55,10 +55,10 @@ const Balance = () => {
           <p>Settings</p>
         </aside>
       </div>
-      <div className="w-[90%] border-b-[1px] shadow-md p-[1rem]">
-        <div className="flex justify-between my-[1rem] px-[2rem]">
-          <span className="text-[#A09F9F] text-2xl">Recent transactions</span>
-          <span className=" font-bold">See More</span>
+      <div className="md:w-[90%] border-b-[1px] shadow-md p-[1rem]  m-auto mt-[1rem]">
+        <div className="flex justify-between my-[1rem] md:px-[2rem]">
+          <span className="text-[#A09F9F] md:text-2xl text-l">Recent transactions</span>
+          <span className=" font-bold text-l">See More</span>
         </div>
         {transactions.map((transaction) => {
           let date = new Date(transaction.data);
@@ -82,20 +82,20 @@ const Balance = () => {
 
           const newDate = `${month} ${day}, ${year}`;
           return (
-            <div className="flex gap-2 justify-between p-[1rem] border-b-grey m-auto">
+            <div className="flex gap-2 justify-between md:p-[1rem] py-[0.9rem] border-b-grey m-auto">
               <aside className="flex items-center justify-center gap-4">
                 <span className="p-[0.5rem] rounded-full bg-[#FFF4F4]">
                   <img src={gift.src} alt="" />
                 </span>
                 <div>
-                  <h2 className="text-xl text-[#818080]">
+                  <h2 className="md:text-xl  text-[#818080]">
                     {transaction.title}
                   </h2>
                   <p className="text-[#A09F9F]">{newDate}</p>
                 </div>
               </aside>
               <aside>
-                <h2 className="text-xl text-[#424040]">
+                <h2 className="md:text-xl text-[#424040]">
                   {" "}
                   +&#8358; {transaction.ammount}
                 </h2>

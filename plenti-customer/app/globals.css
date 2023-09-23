@@ -10,9 +10,12 @@
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
     max-width: 1440px; /* or your preferred max width */
-    padding-left: 16px;
-    padding-right: 16px;
   }
+}
+*::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  background: transparent; /* make scrollbar transparent */
 }
 
 .height-minus-80 {
@@ -60,6 +63,15 @@ body {
   color: black;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
+}
+.hide-scrollbar {
+  scrollbar-width: none;  
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  background: transparent; /* make scrollbar transparent */
 }
 @media (max-width: 560px) {
   .category {
