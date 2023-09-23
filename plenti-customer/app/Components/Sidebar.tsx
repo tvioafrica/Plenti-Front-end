@@ -2,17 +2,15 @@
 import Link from "next/link";
 import React from "react";
 import { navLinks } from "../constants";
-import { logo } from "@/images/index";
+// import { logo } from "@/images/index";
 import { usePathname } from "next/navigation";
 
 const Sidebar = () => {
   const currentRoute = usePathname();
 
   return (
-    <div className="bg-white md:fixed top-0 left-0 md:w-[280px] h-full">
-      <div>
-        <img src={logo.src} alt="" className="p-[2rem] md:block hidden" />
-      </div>
+    <div className="bg-white md:sticky top-[80px] left-0 md:w-[280px] h-[100vh] ">
+     
       <ul className="md:block hidden">
         {navLinks.map((nav) => {
           return (

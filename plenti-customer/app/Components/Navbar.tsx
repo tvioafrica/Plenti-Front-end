@@ -2,12 +2,16 @@ import React from "react";
 import { InputBase, Paper, IconButton } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import { profile } from "@/images/index";
+import { logo } from "@/images/index";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 md:ml-[280px] z-50 h-[80px] bg-white p-[1rem] border-b-2 md:flex items-center w-[95%] hidden ">
-      <aside className="basis-[60%]">
+    <div className="sticky top-0 left-[280px] z-50 h-[80px] bg-white p-[1rem] border-b-2 md:flex items-center justify-between   w-full m-auto hidden max-w-[1400px]">
+      <aside className="basis-[60%] flex items-center gap-20">
+        <div>
+          <img src={logo.src} alt="" className="p-[2rem] md:block hidden" />
+        </div>
         <Paper
           component="form"
           sx={{
@@ -15,8 +19,7 @@ const Navbar = () => {
             alignItems: "center",
             backgroundColor: "#F3F3F3",
             boxShadow: "none",
-            width:'60%'
-            
+            width: "60%",
           }}
         >
           <IconButton type="submit">

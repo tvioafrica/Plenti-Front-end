@@ -9,25 +9,29 @@
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
+    max-width: 1440px; /* or your preferred max width */
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 .height-minus-80 {
   height: calc(100vh - 80px);
 }
-html{
+html {
   overflow-x: hidden;
+  margin: 0 auto;
+
 }
 body {
   font-family: "Raleway", sans-serif !important;
   color: black;
   background: white;
-  overflow-x: hidden;
-
+  
 }
 .react-tabs__tab-list {
   border-bottom: none !important;
-  margin: 1rem 0 10px!important;
+  margin: 1rem 0 10px !important;
   padding: 0;
   display: flex;
   gap: 2px;
@@ -56,11 +60,9 @@ body {
   color: black;
   font-weight: bold;
   border-radius: 5px 5px 0 0;
-
 }
- @media (max-width:560px) {
-
-  .category{
+@media (max-width: 560px) {
+  .category {
     display: grid;
   }
- }
+}

@@ -24,7 +24,7 @@ export default function RootLayout({
         <Navbar />
         <main className="md:flex">
           <Sidebar />
-          <div className="md:ml-[280px] md:mt-[80px] mb-[100px] flex max-sm:p-[1rem] md:w-[95%] overflow-hidden  height-minus-80">
+          <div className="  mb-[100px] flex max-sm:p-[1rem] md:w-[95%] overflow-hidden  height-minus-80">
             <aside className="md:w-[70%] h-full overflow-auto">{children}</aside>
             <aside className="w-[30%] hidden md:block">
               <Promotions />
