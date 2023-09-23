@@ -29,7 +29,7 @@ const page = () => {
           <div className="grid md:grid-cols-2 gap-4 my-[2rem]">
             {dealCard.map((deal) => {
               return (
-                <div className="w-[320px]" key={deal.id}>
+                <div className="md:w-[320px] w-full" key={deal.id}>
                   <Deals offer={deal} detailsLink={"rom"} />
                 </div>
               );
