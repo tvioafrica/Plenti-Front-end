@@ -5,6 +5,7 @@ import Typography from "@mui/material/Typography";
 import Link from "@mui/material/Link";
 import { deal } from "@/images/index";
 import TimerOutlinedIcon from "@mui/icons-material/TimerOutlined";
+import CustomRadio from "@/app/Components/CustomRadio";
 
 function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   event.preventDefault();
@@ -44,20 +45,43 @@ const page = () => {
       >
         {breadcrumbs}
       </Breadcrumbs>
-      <div>
-        <img src={deal.src} alt="" />
+      <h2 className="mx-[0.5rem] my-[1rem] text-2xl">Proceed To Checkout </h2>
+      <div className="w-4/5 rounded-lg border-2 flex gap-8 p-[0.5rem] min-h-[151px]">
+        <img
+          src={deal.src}
+          alt=""
+          className="h-[152px] w-[152px] object-cover rounded-md"
+        />
 
         <aside>
-          <span className="bg-[#FFF5F5] text-[#EA1C24] my-[1rem] inline-block rounded-md p-[0.5rem] text-[12px] w-auto">
-            <TimerOutlinedIcon /> <span>Earn #3000 cashback</span>
+          <span className="bg-[#FFF5F5] text-[#EA1C24]  inline-block rounded-md p-[0.5rem] text-[12px] w-auto">
+            <TimerOutlinedIcon /> <span>Earn ₦3000 cashback</span>
           </span>
 
-          <p>
+          <p className="text-[#818080] my-[1rem]">
             Buy 2 cups of ice cream for ₦3000 and earn up a cashback of ₦1000
           </p>
-          <p>#3000</p>
+          <p className="font-bold">₦3000</p>
         </aside>
       </div>
+      <div className="w-4/5 my-[2rem]">
+        <h2 className="text-xl font-bold mb-[1rem]">
+          {" "}
+          How do you want to claim your order ?
+        </h2>
+        <p className="text-plenti-black">
+          To pick the best option please make sure you have read the terms and
+          condition of this deal. Read terms and condition{" "}
+          <span className="text-red-500 underline">here</span>
+        </p>
+      </div>
+      {/* custom input */}
+
+      <CustomRadio />
+
+      <button className="bg-[#EA1C24] text-[#FFEAEB] rounded-[24px] h-[48px] my-[2rem] block md:w-2/5 w-4/5 px-[3rem] py-[0.5rem]">
+        continue
+      </button>
     </div>
   );
 };

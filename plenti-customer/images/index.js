@@ -33,9 +33,13 @@ import settings from './settings.svg'
 import loginimg from './loginimg.svg'
 import googleicon from './googleicon.svg'
 import appleicon from './appleicon.svg'
+import cart from "./cart.svg"
+import deliveryBike from "./deliveryBike.svg"
 
 
 export {
+  deliveryBike,
+  cart,
   appleicon,
   googleicon,
   withdraw,

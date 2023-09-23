@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors:{
+        'plenti-black':'#818080',
+      },
       width: {
         'calc-100-minus-280': 'calc(100% - 280px)',
       },

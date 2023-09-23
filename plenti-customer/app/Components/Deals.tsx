@@ -53,7 +53,7 @@ const Deals: React.FC<OfferProps> = ({ offer, detailsLink }) => {
         <span className="bg-[#FFF5F5] text-[#EA1C24] md:my-[1rem] inline-block rounded-md p-[0.5rem] text-[12px] w-auto">
           <TimerOutlinedIcon /> <span>{offer.percentCashback}</span>
         </span>
-        <p className="text-[#818080] md:my-[1rem] ny-[0.5rem] max-md:text-sm">{offer.offer}</p>
+        <p className="text-[#818080] md:my-[1rem] my-[0.5rem] max-md:text-sm">{offer.offer}</p>
         <p className="text-[#818080] md:my-[1rem]">
           <span className="flex items-center max-md:text-sm">
             {" "}

@@ -32,10 +32,10 @@ const page = () => {
         <h2 className="text-2xl">Available offers and deals</h2>
       </section>
 
-      <div className="flex overflow-x-auto white-space-nowrap gap-8 my-[2rem]">
+      <div className="md:flex overflow-x-auto white-space-nowrap gap-8 my-[2rem]">
         {dealCard.map((deal) => {
           return (
-            <div className="w-[340px] flex-shrink-0">
+            <div className="md:w-[340px] w-full flex-shrink-0">
               <Deals offer={deal} key={deal.id} detailsLink={`/stores/${deal.id + deal.percentCashback}/offers`} />
             </div>
           );
